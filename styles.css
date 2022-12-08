@@ -372,18 +372,43 @@ main h2{
     flex-wrap: wrap;
 }
 
-.column .row{
-    width:47.5%;
+table{
+    width: 100%;
+}
+
+tr{
     background-color: rgba(0,0,0,0.15);
     background-clip: content-box;
+
+}
+
+td{
+    border-bottom: 25px solid transparent;
+}
+
+.column .row{
+    width:47.5%;
+    height: 50%;
+    background-clip: content-box;
     /* padding-right: 20px; */
+}
+
+.center{
+    text-align: center;
+}
+
+.row h2 .center{
+    border-right: 2px solid var(--bg-primary);
+}
+
+.bg{
+    background-color: rgba(0,0,0,0.15);
 }
 
 main p{
     color:var(--text-secondary);
     line-height: 25px;
-    margin-bottom: 25px;
-    margin-left:25px;
+    margin:25px;
 }
 
 main a{
