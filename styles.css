@@ -193,7 +193,13 @@ body{
     }
 }
 
-
+.agatatat{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    float:left;
+    height: 80%;
+}
 .nav-item:last-child{
     margin-top: auto;
 }
@@ -329,7 +335,7 @@ main{
     border-right: 2px solid var(--bg-primary);
 }
 
-.hello img{
+.hello img .fok{
     width: 135px;
     height:80%;
 
@@ -384,6 +390,15 @@ tr{
 
 td{
     border-bottom: 25px solid transparent;
+}
+
+.game{
+    image-rendering: pixelated;
+    width: auto;
+    height:100%;
+    cursor: grab;
+    display: block;
+    margin: 0;
 }
 
 .column .row{

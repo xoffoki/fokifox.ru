@@ -21,11 +21,12 @@
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="sad-face.js"></script>
+    <!-- <script src="sad-face.js"></script> -->
 </head>
 
 <body>
-
+    <audio id="audio" src="assets/sfx/mado.mp3" type="audio/mpeg"></audio>
+    <audio id="audio" src="assets/sfx/mado.ogg" type="audio/ogg"></audio>
 
 
     <div class="wrapper">
@@ -89,8 +90,9 @@
                 <header>
 
                     <div class="hello">
-                        <h1>Привет! <br> Меня зовут fokifox.</h1>
-                        <img class="fok" src="assets/img/main/FokWhite.png" alt="fokifox">
+                        <h1>Русификация<br>Yume Nikki (Дневник Сновидений)</h1>
+                        <a class="agatatat" href="" id="play"><img class="game" src="assets/img/icons/mado.png" alt="madotsuki yume nikki"></a>
+                        
                     </div>
                 </header>
 
@@ -167,6 +169,13 @@
             lastScrollY = window.scrollY;
         })
     }
+</script>
+
+<script>
+    document.getElementById('play').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('audio').play();
+    });
 </script>
 
 </body>
