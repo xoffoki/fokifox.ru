@@ -1,0 +1,76 @@
+:root{
+    --text-primary: #D8B1E3;
+    --text-secondary: #B581B9;
+    --bg-primary: #563965;
+    --bg-secondary: #fff;
+    --mob-nav-bar-bg: rgba(0,0,0,0.55);
+    --bg: #000;
+}
+
+.row h2{
+    padding: 12px;
+}
+
+main header{
+    margin-bottom: 20px;
+}
+
+.wrapper .sidebar ul .mob-nav-bar  li:hover a{
+    color: var(--text-primary);
+    transform: scale(1.2);
+}
+
+.links ul li{
+    padding: 15px;
+}
+
+.navbar-btns:hover{
+    border: 12px solid transparent;
+    border-image: url("../assets/img/games/rus/yn/border_2_hover.png") 10 repeat !important ;
+    border-image-width: 2 !important;
+    image-rendering: pixelated !important;
+    padding: 2px;
+}
+
+.navbar-btns{
+    border: 12px solid transparent;
+    border-image: url("../assets/img/games/rus/yn/border_2.png") 10 repeat !important ;
+    border-image-width: 2 !important;
+    image-rendering: pixelated !important;
+    padding: 2px;
+}
+
+main h2{
+    margin-bottom: 0;
+}
+
+main .content{
+    padding: 12px;
+}
+
+main p{
+    margin:12px;
+}
+
+.border{
+    border: 12px solid transparent;
+    background-image: url("../assets/img/games/rus/yn/containerbg.png") !important;
+    border-image: url("../assets/img/games/rus/yn/border.png") 10 repeat !important ;
+    border-image-width: 2 !important;
+    image-rendering: pixelated !important;
+}
+
+article header{
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+.hello{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 156px;
+    justify-content: space-between;
+    align-items: center;
+}

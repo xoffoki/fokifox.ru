@@ -18,16 +18,23 @@
     <meta name="darkreader-lock">
     <meta name="theme-color" content="#8d5890">
     <meta property="og:video" content="https://cdn.discordapp.com/attachments/797101512639250442/1047056200283455509/vlc_ZFo1UPNyr5.mp4"/>
+
+    <link rel="stylesheet" href="css/yn.css">
     <link rel="stylesheet" href="styles.css">
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <!-- <script src="sad-face.js"></script> -->
 </head>
 
 <body>
-    <audio id="audio" src="assets/sfx/mado.mp3" type="audio/mpeg"></audio>
-    <audio id="audio" src="assets/sfx/mado.ogg" type="audio/ogg"></audio>
-
+    <audio id="mado" src="assets/sfx/mado.mp3" type="audio/mpeg"></audio>
+    <audio id="mado" src="assets/sfx/mado.ogg" type="audio/ogg"></audio>
+    <audio id="sel" src="assets/sfx/select.mp3" type="audio/mpeg"></audio>
+    <audio id="sel" src="assets/sfx/select.ogg" type="audio/ogg"></audio>
+    <audio id="click" src="assets/sfx/click.mp3" type="audio/mpeg"></audio>
+    <audio id="click" src="assets/sfx/click.ogg" type="audio/ogg"></audio>
 
     <div class="wrapper">
         <div class="sidebar">
@@ -35,7 +42,7 @@
 
                 <div class="nav-item">
                     <header>
-                        <a href="#"><img class="logo" title="fokifox" src="assets/img/main/CubicFoki.png" alt="fokifox"></a>
+                        <a href="index.html"><img class="logo" title="fokifox" src="assets/img/games/rus/yn/CubicFoki.png" alt="fokifox"></a>
 
                     </header>
                 </div>
@@ -43,7 +50,7 @@
                 <div class="nav-item">
                     <ul>
                         <nav class="pc-nav-bar">
-                            <li><a class="navbar-btns" href="#" title="Главная">Главная</a></li>
+                            <li><a class="navbar-btns" href="index.html" title="Главная">Главная</a></li>
                             <li><a class="navbar-btns" href="#" title="Мои игры">Мои игры</a></li>
                             <li><a class="navbar-btns" href="#" title="Русификаторы">Русификаторы</a></li>
                             <li><a class="navbar-btns" href="#" title="Дискография">Дискография</a></li>
@@ -51,7 +58,7 @@
                         </nav>
 
                         <div class="mob-nav-bar">
-                            <li><a class="navbar-btns-icons" href="#"><ion-icon name="home"></ion-icon></a></li>
+                            <li><a class="navbar-btns-icons" href="index.html"><ion-icon name="home"></ion-icon></a></li>
                             <li><a class="navbar-btns-icons" href="#"><ion-icon name="game-controller"></ion-icon></a></li>
                             <li><a class="navbar-btns-icons" href="#"><ion-icon name="disc"></ion-icon></ion-icon></a></li>
                             <li><a class="navbar-btns-icons" href="#"><ion-icon name="information-circle"></ion-icon></ion-icon></a></li>
@@ -70,7 +77,7 @@
 
                 <div class="nav-item">
                     <footer>
-                        <div class="text">Поддержать автора:</div>
+                        <div class="text">Поддержать:</div>
                         <div class="links">
                             <ul>
                                 <li><a href="https://yoomoney.ru/to/4100117645314490">ЮMoney</a></li>
@@ -87,11 +94,11 @@
 
         <main>
             <article>
-                <header>
+                <header class="border">
 
                     <div class="hello">
-                        <h1>Русификация<br>Yume Nikki (Дневник Сновидений)</h1>
-                        <a class="agatatat" href="" id="play"><img class="game" src="assets/img/icons/mado.png" alt="madotsuki yume nikki"></a>
+                        <h1>Русификация<br>Yume Nikki <br> (Дневник Сновидений)</h1>
+                        <div class="agatatat game" href="" id="play"><button></button></div>
                         
                     </div>
                 </header>
@@ -105,34 +112,36 @@
                             <table>
                                 <tr>
                                     <td>
-                                        <h2 class="cnt-text">Обо мне</h2>
+                                        <h2 class="border">Обо мне</h2>
+                                        <div class="content border">
+                                            <p>я фока</p>
 
-                                        <p>я фока</p>
+                                            <p>делаю <a href="#">игры</a>, <a href="#">русификаторы</a> и иногда <a href="">музяку</a> 
+                                                <br> выкладываю всё под ником <br> fokifox (фокифокс)
+                                            </p>
+    
+                                            <p>на моём сайте вы найдёте: <br>
+                                                <a href="#">мои игры</a> <br>
+                                                <a href="#">мои русификаторы</a> <br>
+                                                <a href="#">"музыку" мою</a><br>
+                                                <a href="#">меня</a>
+                                            </p>
+    
+                                            <p>я не знаю ни русского, ни английского 
+                                                <br> предложить мне проект на перевод:<br> <a href="#">тык</a>
+                                            </p>
+    
+                                            <p>если вам нравится то, что я делаю,
+                                                <br> вы можете покормить меня: <br> <a href="#">вы поняли</a>
+                                            </p>
+    
+                                            <p>если нет, <br> сри меня в личных сообщениях! 
+                                                <br> здеся мои контакты: <br> <a href="#">смешно типа</a>
+                                            </p>
+    
+                                            <p>спасибо</p>
+                                        </div>
 
-                                        <p>делаю <a href="#">игры</a>, <a href="#">русификаторы</a> и иногда <a href="">музяку</a> 
-                                            <br> выкладываю всё под ником <br> fokifox (фокифокс)
-                                        </p>
-
-                                        <p>на моём сайте вы найдёте: <br>
-                                            <a href="#">мои игры</a> <br>
-                                            <a href="#">мои русификаторы</a> <br>
-                                            <a href="#">"музыку" мою</a><br>
-                                            <a href="#">меня</a>
-                                        </p>
-
-                                        <p>я не знаю ни русского, ни английского 
-                                            <br> предложить мне проект на перевод:<br> <a href="#">тык</a>
-                                        </p>
-
-                                        <p>если вам нравится то, что я делаю,
-                                            <br> вы можете покормить меня: <br> <a href="#">вы поняли</a>
-                                        </p>
-
-                                        <p>если нет, <br> сри меня в личных сообщениях! 
-                                            <br> здеся мои контакты: <br> <a href="#">смешно типа</a>
-                                        </p>
-
-                                        <p>спасибо</p>
                                 </tr>
                             </table>
 
@@ -146,10 +155,6 @@
                 
 
             </article>
-
-            <footer>
-                <p>ha</p>
-            </footer>
         </main>
 
     </div>
@@ -170,11 +175,33 @@
         })
     }
 </script>
-
+<!-- 
 <script>
     document.getElementById('play').addEventListener('click', function (e) {
     e.preventDefault();
     document.getElementById('audio').play();
+    });
+</script> -->
+
+<script>
+    var selectSound= $("#sel")[0];
+    var clickSound= $("#click")[0];
+    var madoSound= $("#mado")[0];
+
+    $("a")
+    .mouseenter(function() {
+        selectSound.currentTime = 0
+        selectSound.play();
+    });
+
+    $("a")
+    .click(function() {
+        clickSound.currentTime = 0
+        clickSound.play();
+    });
+    $(".game")
+    .mousemove(function() {
+        madoSound.play();
     });
 </script>
 

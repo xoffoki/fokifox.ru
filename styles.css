@@ -1,10 +1,4 @@
-:root{
-    --text-primary: #fff;
-    --text-secondary: lightgray;
-    --bg-primary: #8d588f;
-    --bg-secondary: #fff;
-    --mob-nav-bar-bg: rgba(0,0,0,0.55);
-}
+
 
 *{
     font-family: "Georgia", serif;
@@ -17,8 +11,26 @@
 }
 
 body{
-    background-image: url("assets/img/main/bg.png");
-    background-color: var(--bg-primary);
+    background-image: var(--bg);
+    background-color: #000;
+    background-attachment: fixed;
+}
+
+.hello .custom-bg{
+    border-left: 2px solid var(--bg-primary);
+    border-right: 2px solid var(--bg-primary);
+}
+
+.row h2{
+    background-color: rgba(0,0,0,0.15);
+}
+
+.cnt-text{
+    border-right: 2px solid var(--bg-primary);
+}
+
+main a{
+    color:var(--bg-primary);
 }
 
 .randomText{
@@ -205,7 +217,8 @@ body{
 }
 
 .sidebar header{
-    border-bottom: 1px solid rgba(0,0,0,.05);
+    margin-top: 10px;
+    margin-bottom: 20px;
     /* margin-bottom: 20px; */
     text-align: center;
 }
@@ -228,10 +241,6 @@ body{
     margin-top:auto;
 }
 
-.wrapper .sidebar ul li{
-    padding: 15px;
-}
-
 .wrapper .sidebar ul li a{
     text-shadow: #000 1px 0 10px;
     color:var(--text-secondary);
@@ -242,21 +251,8 @@ body{
     transition: transform .2s;
 }
 
-.navbar-btns{
-    border-left: 2px solid var(--bg-primary);
-    border-right: 2px solid var(--bg-primary);
-}
 .wrapper .sidebar ul li a img{
     padding-left: 10px;
-}
-
-.wrapper .sidebar ul li:hover{
-    background: rgba(255,255,255,.05);
-}
-
-.wrapper .sidebar ul li:hover a{
-    color: var(--text-primary);
-    transform: scale(1.2);
 }
 
 .wrapper .sidebar footer{
@@ -305,17 +301,6 @@ main{
 
 }
 
-.hello{
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    height: 156px;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgba(225,225,225,.05);
-    padding-bottom: 15px;
-}
-
 .hello .custom-bg{
     background-image: linear-gradient(
         to right,
@@ -330,9 +315,6 @@ main{
     background-position-y: -800px;
     box-shadow: 0px 10px 10px var(--mob-nav-bar-bg);
     clip-path: inset(0px 0px -20px 0px);
-
-    border-left: 2px solid var(--bg-primary);
-    border-right: 2px solid var(--bg-primary);
 }
 
 .hello img .fok{
@@ -341,14 +323,9 @@ main{
 
 }
 
-main .content{
-    padding-top: 15px;
-}
-
 main header{
     width: 100%;
     height:100%;
-    margin-bottom: 25px;
 }
 
 main h1{
@@ -357,17 +334,10 @@ main h1{
 }
 
 main h2{
-    padding: 20px;
     color: var(--text-primary);
     line-height: 25px;
-    margin-bottom: 25px;
-
 }
 
-.row h2{
-    border-left: 2px solid var(--bg-primary);
-    background-color: rgba(0,0,0,0.15);
-}
 
 .column{
     display: flex;
@@ -394,11 +364,31 @@ td{
 
 .game{
     image-rendering: pixelated;
-    width: auto;
+    width: 140px;
     height:100%;
     cursor: grab;
     display: block;
     margin: 0;
+    background-color: red;
+    background: url(assets/img/icons/mado.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.game button{
+    color: transparent; background-color: transparent;
+    outline: transparent;
+    border-color: transparent;
+}
+
+.game:hover{
+    background: url(assets/img/icons/mado_active.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.game:active{
+    cursor: grabbing;
 }
 
 .column .row{
@@ -412,10 +402,6 @@ td{
     text-align: center;
 }
 
-.cnt-text{
-    border-right: 2px solid var(--bg-primary);
-}
-
 .bg{
     background-color: rgba(0,0,0,0.15);
 }
@@ -423,11 +409,9 @@ td{
 main p{
     color:var(--text-secondary);
     line-height: 25px;
-    margin:25px;
 }
 
 main a{
-    color:var(--bg-primary);
     text-shadow: #8d588f80 1px 0px 3px;
     text-decoration: underline;
 }
