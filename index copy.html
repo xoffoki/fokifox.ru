@@ -69,9 +69,9 @@
 
                 <div class="nav-item">
                     <div class="socials">
-                        <a href="#"><img style="width: 55%;" src="/assets/img/icons/youtube.png" alt="YouTube"></a>
-                        <a href="#"><img style="width: 47%;" src="/assets/img/icons/gamejolt.png" alt="GameJolt"></a>
-                        <a href="#"><img style="width: 72%;" src="/assets/img/icons/discord.png" alt="Discord"></a>
+                        <a href="#"><img style="width: 55%;" src="/assets/img/games/rus/yn/youtube.png" alt="YouTube"></a>
+                        <a href="#"><img style="width: 47%;" src="/assets/img/games/rus/yn/gamejolt.png" alt="GameJolt"></a>
+                        <a href="#"><img style="width: 72%;" src="/assets/img/games/rus/yn/discord.png" alt="Discord"></a>
                     </div>
                 </div>
 
@@ -175,13 +175,6 @@
         })
     }
 </script>
-<!-- 
-<script>
-    document.getElementById('play').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.getElementById('audio').play();
-    });
-</script> -->
 
 <script>
     var selectSound= $("#sel")[0];
@@ -200,8 +193,13 @@
         clickSound.play();
     });
     $(".game")
-    .mousemove(function() {
+    .mouseenter(function() {
         madoSound.play();
+    });
+    $(".game")
+    .mouseleave(function() {
+        madoSound.currentTime = 0
+        madoSound.pause();
     });
 </script>
 

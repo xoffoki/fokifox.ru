@@ -4,11 +4,32 @@
     --bg-primary: #563965;
     --bg-secondary: #fff;
     --mob-nav-bar-bg: rgba(0,0,0,0.55);
+    --text-gradient:linear-gradient(to bottom, rgb(217, 178, 228) 0 43.75%, rgb(205, 162, 214) 43.75% 56.25%, rgb(194, 146, 200) 56.25% 68.75%, rgb(182, 130, 186) 68.75% 81.25%, rgb(171, 115, 173) 81.25% 87.5%, rgb(159, 98, 158) 87.5% 93.75%, rgb(148, 87, 144) 93.75% 100%, rgb(137, 87, 131) 100% 100%);
+    --link-gradient:linear-gradient(to bottom, rgb(123, 82, 134) 0 43.75%, rgb(110, 65, 120) 43.75% 56.25%, rgb(99, 48, 105) 56.25% 68.75%, rgb(104, 36, 110) 68.75% 81.25%, rgb(118, 19, 120) 81.25% 87.5%, rgb(138, 0, 136) 87.5% 93.75%, rgb(126, 0, 114) 93.75% 100%, rgb(139, 0, 116) 100% 100%);
     --bg: #000;
 }
 
-.row h2{
+h1{
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2{
+    color: var(--text-primary);
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding: 12px;
+}
+
+a{
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 main header{
@@ -20,11 +41,12 @@ main header{
     transform: scale(1.2);
 }
 
-.links ul li{
-    padding: 15px;
+.links ul li a{
+    border: 12px solid transparent;
+    padding: 2px;
 }
 
-.navbar-btns:hover{
+.links ul li:hover a{
     border: 12px solid transparent;
     border-image: url("../assets/img/games/rus/yn/border_2_hover.png") 10 repeat !important ;
     border-image-width: 2 !important;
@@ -32,12 +54,16 @@ main header{
     padding: 2px;
 }
 
+.navbar-btns:hover{
+    transform: scale(1.2);
+}
+
 .navbar-btns{
-    border: 12px solid transparent;
-    border-image: url("../assets/img/games/rus/yn/border_2.png") 10 repeat !important ;
+    border: 8px solid transparent;
+    border-image: url("../assets/img/games/rus/yn/border.png") 10 repeat !important ;
     border-image-width: 2 !important;
     image-rendering: pixelated !important;
-    padding: 2px;
+    padding: 6px;
 }
 
 main h2{
@@ -48,13 +74,16 @@ main .content{
     padding: 12px;
 }
 
-main p{
+p{
     margin:12px;
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .border{
     border: 12px solid transparent;
-    background-image: url("../assets/img/games/rus/yn/containerbg.png") !important;
     border-image: url("../assets/img/games/rus/yn/border.png") 10 repeat !important ;
     border-image-width: 2 !important;
     image-rendering: pixelated !important;

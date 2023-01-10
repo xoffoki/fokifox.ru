@@ -8,8 +8,10 @@
 }
 
 main h2{
-    margin-bottom: 25px;
+    color: var(--text-primary);
+    line-height: 25px;
 }
+
 
 .wrapper .sidebar ul li:hover{
     background: rgba(255,255,255,.05);
@@ -26,6 +28,7 @@ main h2{
 
 .row h2{
     border-left: 2px solid var(--bg-primary);
+    background-color: rgba(0,0,0,0.15);
     padding: 20px;
 }
 

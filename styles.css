@@ -21,10 +21,6 @@ body{
     border-right: 2px solid var(--bg-primary);
 }
 
-.row h2{
-    background-color: rgba(0,0,0,0.15);
-}
-
 .cnt-text{
     border-right: 2px solid var(--bg-primary);
 }
@@ -332,12 +328,6 @@ main h1{
     color: var(--text-primary);
     border-bottom: 1px solid rgba(0,0,0,.05);
 }
-
-main h2{
-    color: var(--text-primary);
-    line-height: 25px;
-}
-
 
 .column{
     display: flex;
