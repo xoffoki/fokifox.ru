@@ -379,6 +379,9 @@ td{
 
 .game:active{
     cursor: grabbing;
+    background: url(assets/img/icons/mado.png) no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
 .column .row{
@@ -402,7 +405,6 @@ main p{
 }
 
 main a{
-    text-shadow: #8d588f80 1px 0px 3px;
     text-decoration: underline;
 }
 
