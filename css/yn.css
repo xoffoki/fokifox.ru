@@ -56,6 +56,13 @@ p a{
     -webkit-text-fill-color: transparent;
 }
 
+.popup span{
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 main header{
     margin-bottom: 12px;
 }
@@ -78,8 +85,32 @@ tr{
     transform: scale(1.2);
 }
 
+.logo-nik{
+    image-rendering: pixelated;
+    width:300px;
+}
+
 .links ul li a{
     border: 12px solid transparent;
+    padding: 2px;
+    text-shadow: #000 1px 0 10px;
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: transform .2s;
+    text-decoration: none;
+}
+
+.download-btn a{
+    border: 12px solid transparent;
+    border-image: url("../assets/img/games/rus/yn/border_2.png") 10 repeat !important ;
+    border-image-width: 2 !important;
+    image-rendering: pixelated !important;
     padding: 2px;
 }
 
@@ -94,6 +125,7 @@ tr{
 .navbar-btns:hover{
     transform: scale(1.2);
 }
+
 
 .navbar-btns{
     border: 8px solid transparent;
@@ -132,6 +164,15 @@ p{
     border-image: url("../assets/img/games/rus/yn/border.png") 10 repeat !important ;
     border-image-width: 2 !important;
     image-rendering: pixelated !important;
+}
+
+.main-content{
+    margin-right:12px;
+}
+
+.links ul li{
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    border-top: 1px solid rgba(225,225,225,.05);
 }
 
 article header{
