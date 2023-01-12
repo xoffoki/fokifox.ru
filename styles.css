@@ -85,6 +85,11 @@ main a{
 }
 
 @media only screen and (max-width: 799px){
+    .popup img{
+        width: 60%;
+
+    }
+
     .wrapper{
         width: 100%;
     }
@@ -164,6 +169,11 @@ main a{
         flex-direction: column;
         padding-top: 8px;
     }
+
+    table{
+        text-align: left;
+    }
+    
 
     .sidebar{
         width: 180px;
@@ -329,6 +339,10 @@ main h1{
     border-bottom: 1px solid rgba(0,0,0,.05);
 }
 
+.content{
+    background: rgba(0, 0, 0, 0.15);
+}
+
 .column{
     display: flex;
     flex-direction: row;
@@ -343,13 +357,18 @@ table{
 }
 
 tr{
-    background-color: rgba(0,0,0,0.15);
-    background-clip: content-box;
 
+    background-clip: content-box; 
+
+}
+
+.fok{
+    display: none;
 }
 
 td{
     border-bottom: 25px solid transparent;
+    height:50px;
 }
 
 .game{
@@ -422,4 +441,53 @@ main footer{
     }
 
     
+}
+
+.main-content{
+    width:100%;
+}
+
+.xd-content{
+    width:512px;
+}
+
+.screenshot-section{
+    display: flex;
+    overflow: auto;
+}
+
+.screenshot-section img{
+    width:100%;
+}
+
+.screenshot-section img:hover{
+    cursor:zoom-in;
+}
+
+.popup{
+    position: fixed;
+    top:0; left:0;
+    background: rgba(0, 0, 0, 0.45);
+    height: 100%;
+    width:100%;
+    z-index:100;
+    display: none;
+}
+
+.popup span{
+    position: absolute;
+    top:0;right:10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--text-primary);
+    cursor:pointer;
+    z-index: 100;
+}
+
+.popup img{
+    position: absolute;
+    top:50%;right:50%;left:50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    object-fit:cover;
 }

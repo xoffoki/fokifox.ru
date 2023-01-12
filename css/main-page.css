@@ -28,7 +28,7 @@ main h2{
 
 .row h2{
     border-left: 2px solid var(--bg-primary);
-    background-color: rgba(0,0,0,0.15);
+    background-color: rgba(0,0,0,0.30);
     padding: 20px;
 }
 
@@ -43,6 +43,7 @@ main header{
 
 main .content{
     padding-top: 15px;
+    text-align: center;
 }
 
 main p{

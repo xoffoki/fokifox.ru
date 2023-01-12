@@ -9,6 +9,23 @@
     --bg: #93588F;
 }
 
+::-webkit-scrollbar{
+    width:1em;
+}
+
+::-webkit-scrollbar-track{
+    border: 12px solid transparent;
+    border-image: url("../assets/img/games/rus/yn/border.png") 10 repeat !important ;
+    border-image-width: 12 !important;
+    image-rendering: pixelated !important;
+}
+
+::-webkit-scrollbar-thumb{
+    border: 8px solid transparent;
+    border-image: url("../assets/img/games/rus/yn/border.png") 6 round !important ;
+    image-rendering: pixelated !important;
+}
+
 h1{
     background: var(--text-gradient);
     background-clip: text;
@@ -40,7 +57,20 @@ p a{
 }
 
 main header{
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+}
+
+.content{
+    margin-bottom: 12px;
+
+    
+}
+
+tr{
+
+    background-clip: content-box;
+    display: flex;
+
 }
 
 .wrapper .sidebar ul .mob-nav-bar  li:hover a{
