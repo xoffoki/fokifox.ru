@@ -136,9 +136,6 @@ class fokFooter extends HTMLElement {
                         <ul>
                         <li><p><ion-icon name="mail"></ion-icon> <a href="mailto:ya@fokifox.ru"> ya@fokifox.ru</a></p></li>
                         </ul>
-                        <ul>
-                        <li><p class="discord-copy"><ion-icon name="logo-discord"></ion-icon> Фок#3049</p></li> 
-                        </ul>
                     </section>
                     </div>
                 </div>
