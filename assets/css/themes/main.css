@@ -9,7 +9,7 @@
 /* background */
 
 body{
-    background-image: url('https://fokifox.ru/assets/img/main/bg.png');
+    background-image: url('/assets/main/bg.png');
     background-attachment: fixed;
     background-color: #000;
 }
