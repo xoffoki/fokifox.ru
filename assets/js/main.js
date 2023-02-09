@@ -234,32 +234,6 @@ function onloadEvents(){
 }
 window.onload = onloadEvents;
 
-// copy discord tag
-
-let discCopy = document.querySelector(".discord-copy");
-const initDiscText = '<ion-icon name="logo-discord"></ion-icon> Фок#3049';
-const discTag = 'Фок#3049';
-const resultText = 'Скопировано!';
-
-discCopy.addEventListener('click', (event) => {
-    if (discCopy.textContent = discTag) {
-        navigator.clipboard.writeText(discCopy.textContent);
-
-        setTimeout(copyResult, 500);
-    } else {
-
-    }
-});
-
-function copyResult(){
-    discCopy.textContent = resultText;
-    setTimeout(returnDiscord, 1000);
-}
-
-function returnDiscord(){
-    discCopy.innerHTML = initDiscText;
-}
-
 // images
 
 
