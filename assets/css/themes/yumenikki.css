@@ -1,0 +1,199 @@
+/*  */
+
+:root{
+    --primary-color: #D8B1E3;
+    --text-primary: #B581B9;
+    --text-secondary: #fff;
+
+    --bg-primary: #563965;
+    --bg-secondary: #fff;
+    --text-gradient:linear-gradient(to bottom, rgb(217, 178, 228) 0 43.75%, rgb(205, 162, 214) 43.75% 56.25%, rgb(194, 146, 200) 56.25% 68.75%, rgb(182, 130, 186) 68.75% 81.25%, rgb(171, 115, 173) 81.25% 87.5%, rgb(159, 98, 158) 87.5% 93.75%, rgb(148, 87, 144) 93.75% 100%, rgb(137, 87, 131) 100% 100%);
+    --link-gradient:linear-gradient(to bottom, rgb(123, 82, 134) 0 43.75%, rgb(110, 65, 120) 43.75% 56.25%, rgb(99, 48, 105) 56.25% 68.75%, rgb(104, 36, 110) 68.75% 81.25%, rgb(118, 19, 120) 81.25% 87.5%, rgb(138, 0, 136) 87.5% 93.75%, rgb(126, 0, 114) 93.75% 100%, rgb(139, 0, 116) 100% 100%);
+}
+
+::-webkit-scrollbar{
+    width:1em;
+}
+
+::-webkit-scrollbar-track:vertical{
+    border: 12px solid transparent;
+    border-image: url("/assets/main/pages/yume-nikki/border2.png") 10 repeat !important ;
+    border-image-width: 12 !important;
+    image-rendering: pixelated !important;
+}
+
+::-webkit-scrollbar-track:horizontal{
+    border: 12px solid transparent;
+
+    border-image: url("/assets/main/pages/yume-nikki/border3.png") 10 repeat !important ;
+    border-image-width: 12 !important;
+    image-rendering: pixelated !important;
+}
+
+::-webkit-scrollbar-thumb{
+    border: 8px solid transparent;
+    border-image: url("/assets/main/pages/yume-nikki/border.png") 7 round !important ;
+    image-rendering: pixelated !important;
+}
+
+
+/* background */
+
+body{
+    background-color: #000;
+}
+
+.side-navbar, main, footer, .secondary-footer, .section-content, .breadcrumb{
+    background: rgba(0, 0, 0, 0.15);
+}
+
+/* typography */
+
+p, a, h1, h2, .breadcrumb, select, .article-list li{
+    background: var(--text-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ion-icon{
+    color: var(--primary-color);
+}
+
+.side-navbar a{
+    text-shadow: #000 1px 0 10px;
+}
+
+p{
+    text-shadow: rgba(0, 0, 0, 0.336) 1px 0 10px;
+}
+
+main a{
+    text-decoration: underline var(--primary-color);
+}
+
+.share-label{
+    -webkit-text-fill-color: #fff;
+}
+
+/* styles */
+
+.border, select, option{
+    border: 6px solid transparent;
+    border-image: url("/assets/main/pages/yume-nikki/border.png") 10 repeat !important ;
+    border-image-width: 4 !important;
+    image-rendering: pixelated !important;
+}
+
+option{
+    background: black;
+    border: none;
+}
+
+article section, article header{
+    padding: 18px;
+}
+
+.game-character{
+    background: url(/assets/main/pages/yume-nikki/mado1.png) no-repeat;
+    background-position: center;
+    cursor: grab;
+    background-size: 100%;
+}
+
+.game-character:hover{
+    background: url(/assets/main/pages/yume-nikki/mado2.png) no-repeat;
+    background-position: center;
+    cursor: grab;
+    background-size: 100%;
+}
+
+.game-character:active{
+    cursor: grabbing;
+}
+
+.breadcrumb{
+    padding:12px;
+    padding-top:6px;
+    background: rgba(0,0,0,0.35);
+    background-clip: border-box;
+}
+
+.header{
+    background-image:
+    linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,.25)),
+    url('/assets/main/pages/yume-nikki/header-bg.png');
+    background-position: center;
+    background-size: 100%;
+    background-clip:content-box
+}
+
+.col-1, .col-2{
+    margin: 0;
+    margin-top: 12px;
+}
+
+.col-2{
+    margin-left: 12px;
+}
+
+.share{
+    padding: 0;
+}
+
+.download-text{
+    background:linear-gradient(to bottom, lightgreen,lightgreen, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.article-list{
+    margin-bottom: 12px;
+}
+
+/* buttons */
+
+.btns-border{
+    border: 6px solid transparent;
+    border-image: url("/assets/main/pages/yume-nikki/border.png") 10 repeat !important ;
+    border-image-width: 3 !important;
+    image-rendering: pixelated !important;
+    padding: 8px;
+}
+
+.btns-border-2{
+    border: 12px solid transparent;
+    border-image: url("/assets/main/pages/yume-nikki/border3.png") 10 repeat !important ;
+    border-image-width: 2 !important;
+    image-rendering: pixelated !important;
+    padding: 2px;
+    text-decoration: none;
+}
+
+.btns-border-simplified:hover{
+    border: 12px solid transparent;
+    border-image: url("/assets/main/pages/yume-nikki/border1.png") 10 repeat !important ;
+    border-image-width: 2 !important;
+    image-rendering: pixelated !important;
+    padding: 2px;
+}
+
+/* responsive stuff */
+
+@media only screen and (max-height: 648px), (max-width: 1099px){
+    
+    /* sidebar */
+    
+    .side-navbar{
+        background: rgba(0,0,0,0.25);
+    }
+
+    .top-bar{
+        color: var(--text-primary);
+    }
+
+    .col-2{
+        margin-left: 0;
+    }
+}

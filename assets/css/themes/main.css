@@ -1,0 +1,86 @@
+/*  */
+
+:root{
+    --primary-color: #8d588f;
+    --text-primary: #D3D3D3;
+    --text-secondary: #fff;
+}
+
+/* background */
+
+body{
+    background-image: url('https://fokifox.ru/assets/img/main/bg.png');
+    background-attachment: fixed;
+    background-color: #000;
+}
+
+.side-navbar, main, footer, .secondary-footer, .section-content, .breadcrumb{
+    background: rgba(0, 0, 0, 0.15);
+}
+
+/* typography */
+
+h1, h2{
+    color: var(--text-secondary);
+}
+
+p, .side-navbar a, .breadcrumb{
+    color: var(--text-primary);
+}
+
+main a{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* styles */
+
+.title{
+    background: rgba(0,0,0,0.25);
+    border-left: 2px solid var(--primary-color);
+    padding: 13px;
+    width: 100%;
+}
+
+/* buttons */
+
+.btns-border{
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-left: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+    padding: 13px;
+}
+
+.btns-border:hover{
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-left: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+    padding: 13px;
+}
+
+.btns-border-simplified:hover{
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 13px;
+}
+
+/* responsive stuff */
+
+@media only screen and (max-height: 648px), (max-width: 1099px){
+    
+    /* sidebar */
+    
+    .side-navbar{
+        background: rgba(0,0,0,0.25);
+    }
+
+    .top-bar{
+        color: var(--text-primary);
+    }
+
+
+}
