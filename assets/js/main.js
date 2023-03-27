@@ -33,9 +33,6 @@ class fokNav extends HTMLElement {
                 <a href="https://www.youtube.com/@FOKIFOX" title="YouTube" class="hover-anim-2" target="_blank" rel="noopener">
                     <ion-icon name="logo-youtube"></ion-icon>
                 </a>
-                <a href="https://discord.gg/3zS932Qapp" title="Discord" class="hover-anim-2" target="_blank" rel="noopener">
-                    <ion-icon name="logo-discord"></ion-icon>
-                </a>
                 <a href="https://github.com/xoffoki/fokifox.ru" title="GitHub" class="hover-anim-2" target="_blank" rel="noopener">
                     <ion-icon name="logo-github"></ion-icon>
                 </a>
@@ -62,8 +59,6 @@ class fokNav extends HTMLElement {
 }
 
 customElements.define('fokifox-nav', fokNav);
-
-
 
 class fokFooter extends HTMLElement {
     connectedCallback() {
