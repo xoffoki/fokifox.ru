@@ -107,7 +107,6 @@ class fokFooter extends HTMLElement {
                     <section class="games-collab">
                     <p>Участие в проектах:</p>
                     <ul>
-                        <li><a href="https://www.youtube.com/@antiperfectionism">antiperfectionism:)</a></li>
                         <li><a href="https://scripting.indie.af/xd1/">xd1</a></li>
                     </ul>
                     </section>
