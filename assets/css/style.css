@@ -296,6 +296,12 @@ ion-icon{
 .article-list li{
     list-style-position: outside;
     list-style-type: square;
+    opacity: 85%;
+}
+
+.article-list ol li{
+    list-style: inside;
+    list-style-type:decimal;
 }
 
 .article-list li::marker{

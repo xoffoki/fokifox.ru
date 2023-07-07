@@ -49,7 +49,7 @@ body{
 
 /* typography */
 
-p, a, h1, h2, .breadcrumb, select, .article-list li{
+p, a, h1, h2, h3, .breadcrumb, select, .article-list li{
     background: var(--text-gradient);
     background-clip: text;
     -webkit-background-clip: text;
